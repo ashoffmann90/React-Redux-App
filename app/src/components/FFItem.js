@@ -1,12 +1,18 @@
 import React from 'react'
+import {
+    Card, CardImg, CardText, CardBody,
+    CardTitle, CardSubtitle, Button
+  } from 'reactstrap';
 
 
 export const FFItem = (props) => {
     console.log(props.name)
     return(
-        <div>
-            <h3>{props.name}</h3>
-            {/* <img src=`https://xivapi.com/${props.}`></img> */}
-        </div>
+        <Card>
+            <CardBody>
+            <CardTitle>{props.name}</CardTitle>
+            <CardImg src={`https://xivapi.com/${props.img}`}></CardImg>
+            </CardBody>
+        </Card>
     )
 }
