@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import FFItems from './components/FFItems';
 
 function App() {
   return (
     <div className="App">
       <h1>Rendering</h1>
+      <FFItems/>
     </div>
   );
 }
